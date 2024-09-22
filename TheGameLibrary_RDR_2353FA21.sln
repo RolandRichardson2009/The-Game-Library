@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGameLibrary_RDR_2353FA21", "TheGameLibrary_RDR_2353FA21.csproj", "{A60C0093-3532-4AE6-AFF8-EF64FE24923D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TheGameLibrary", "..\TheGameLibrary\TheGameLibrary.vdproj", "{81442FB1-BA6D-4657-BB4D-81ACE125073B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A60C0093-3532-4AE6-AFF8-EF64FE24923D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60C0093-3532-4AE6-AFF8-EF64FE24923D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60C0093-3532-4AE6-AFF8-EF64FE24923D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60C0093-3532-4AE6-AFF8-EF64FE24923D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81442FB1-BA6D-4657-BB4D-81ACE125073B}.Debug|Any CPU.ActiveCfg = Debug
+		{81442FB1-BA6D-4657-BB4D-81ACE125073B}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {827E5D6A-66ED-455E-9A87-523FC91C6AF0}
+	EndGlobalSection
+EndGlobal
