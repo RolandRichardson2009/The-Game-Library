@@ -1,0 +1,178 @@
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\TheGameLibrary_RDR_2353FA21.exe.config
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\TheGameLibrary_RDR_2353FA21.exe
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\TheGameLibrary_RDR_2353FA21.pdb
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmAbout.resources
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmMain.resources
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmShopNow.resources
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmShoppingCart.resources
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.Properties.Resources.resources
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.GenerateResource.cache
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.CoreCompileInputs.cache
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.exe
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.pdb
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\stdole.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.CopyComplete
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\RD\Desktop\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmViewer.resources
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\TheGameLibrary_RDR_2353FA21.exe.config
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\TheGameLibrary_RDR_2353FA21.exe
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\TheGameLibrary_RDR_2353FA21.pdb
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\stdole.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.AssemblyReference.cache
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.SuggestedBindingRedirects.cache
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmAbout.resources
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmMain.resources
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmShopNow.resources
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmShoppingCart.resources
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.frmViewer.resources
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.Properties.Resources.resources
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.GenerateResource.cache
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.CoreCompileInputs.cache
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.CopyComplete
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.exe
+C:\Users\RD\Documents\Desktop Items\TheGameLibrary_RDR_2353FA21\obj\Debug\TheGameLibrary_RDR_2353FA21.pdb
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\TheGameLibrary_RDR_2353FA21.exe.config
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\TheGameLibrary_RDR_2353FA21.exe
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\TheGameLibrary_RDR_2353FA21.pdb
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\stdole.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.AssemblyReference.cache
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.SuggestedBindingRedirects.cache
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.frmAbout.resources
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.frmMain.resources
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.frmShopNow.resources
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.frmShoppingCart.resources
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.frmViewer.resources
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.Properties.Resources.resources
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.GenerateResource.cache
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.csproj.CoreCompileInputs.cache
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.exe
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.pdb
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Azure.Core.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Azure.Identity.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Buffers.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.ClientModel.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Memory.Data.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Memory.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Security.AccessControl.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Security.Permissions.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Text.Json.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.ValueTuple.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Azure.Core.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Azure.Identity.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Data.SqlClient.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Identity.Client.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Buffers.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.ClientModel.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Memory.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Memory.Data.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Security.AccessControl.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Security.Permissions.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Text.Json.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\System.ValueTuple.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\MySqlConnector.dll
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\bin\Debug\MySqlConnector.xml
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameLibrary_RDR_2353FA21.exe.config
+C:\Users\RD\Desktop\BOARDS\Objective 003\TheGameLibrary\obj\Debug\TheGameL.AB1525B5.Up2Date

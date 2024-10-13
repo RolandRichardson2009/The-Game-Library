@@ -29,7 +29,7 @@ namespace TheGameLibrary_RDR_2353FA21
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmShopNow));
             this.btnHome = new System.Windows.Forms.Button();
             this.btnShoppingCart = new System.Windows.Forms.Button();
@@ -71,14 +71,14 @@ namespace TheGameLibrary_RDR_2353FA21
             this.dgvGamesList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvGamesList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvGamesList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvGamesList.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvGamesList.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvGamesList.Location = new System.Drawing.Point(12, 12);
             this.dgvGamesList.Name = "dgvGamesList";
             this.dgvGamesList.ReadOnly = true;
@@ -86,6 +86,7 @@ namespace TheGameLibrary_RDR_2353FA21
             this.dgvGamesList.TabIndex = 2;
             this.dgvGamesList.TabStop = false;
             this.dgvGamesList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGamesList_CellClick);
+            this.dgvGamesList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGamesList_CellContentClick);
             // 
             // pbxShopNow
             // 
@@ -107,6 +108,7 @@ namespace TheGameLibrary_RDR_2353FA21
             this.cbxQuantity.Name = "cbxQuantity";
             this.cbxQuantity.Size = new System.Drawing.Size(121, 32);
             this.cbxQuantity.TabIndex = 4;
+            this.cbxQuantity.SelectedIndexChanged += new System.EventHandler(this.cbxQuantity_SelectedIndexChanged);
             this.cbxQuantity.Click += new System.EventHandler(this.cbxQuantity_Click);
             // 
             // lblQuantity

@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\progops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|solutionrelative:progops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|c:\\users\\rd\\desktop\\boards\\objective 003\\thegamelibrary\\frmshopnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|solutionrelative:frmshopnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmshopnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|solutionrelative:frmshopnow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A60C0093-3532-4AE6-AFF8-EF64FE24923D}|TheGameLibrary_RDR_2353FA21.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProgOps.cs",
+              "DocumentMoniker": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\ProgOps.cs",
+              "RelativeDocumentMoniker": "ProgOps.cs",
+              "ToolTip": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\ProgOps.cs",
+              "RelativeToolTip": "ProgOps.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T23:21:40.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmShopNow.cs",
+              "DocumentMoniker": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmShopNow.cs",
+              "RelativeDocumentMoniker": "frmShopNow.cs",
+              "ToolTip": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmShopNow.cs",
+              "RelativeToolTip": "frmShopNow.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAqwIcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T20:22:59.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmShopNow.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmShopNow.cs",
+              "RelativeDocumentMoniker": "frmShopNow.cs",
+              "ToolTip": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmShopNow.cs [Design]",
+              "RelativeToolTip": "frmShopNow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T23:21:14.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAnwCAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T20:22:18.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\RD\\Desktop\\BOARDS\\Objective 003\\TheGameLibrary\\frmMain.cs [Design]",
+              "RelativeToolTip": "frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T20:22:00.517Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

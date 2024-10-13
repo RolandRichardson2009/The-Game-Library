@@ -48,7 +48,8 @@ namespace TheGameLibrary_RDR_2353FA21
             //Get RowIndex of selected Cell
             int selectedRowVar = dgvGamesList.CurrentCell.RowIndex;
             string upcVar = dgvGamesList.Rows[selectedRowVar].Cells[5].Value.ToString();
-            switch (upcVar.Substring(0, (upcVar.Length - 2)))
+            //switch (upcVar.Substring(0, (upcVar.Length - 2)))
+            switch (upcVar.Substring(0, (upcVar.Length)))
             {
                 case "812872017150":
                     {
@@ -145,7 +146,9 @@ namespace TheGameLibrary_RDR_2353FA21
                 case "662248922553":
                     cbxQuantity.Items.Clear();
                     cbxQuantity.Text = "";
-                    for (int x = 0; x < ProgOps.getQuantity(upcVar) + 1; x++)
+                    int tempVar = ProgOps.getQuantity(upcVar);
+                    //for (int x = 0; x < ProgOps.getQuantity(upcVar) + 1; x++)
+                    for (int x = 0; x < tempVar + 1; x++)
                     {
                         cbxQuantity.Items.Add((x).ToString());
                     }
@@ -233,6 +236,16 @@ namespace TheGameLibrary_RDR_2353FA21
                 cbxQuantity.Items.Add((x).ToString());
             }
             cbxQuantity.Refresh();
+        }
+
+        private void cbxQuantity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvGamesList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

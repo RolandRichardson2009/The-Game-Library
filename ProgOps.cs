@@ -1,4 +1,5 @@
 ﻿using System;
+using MySqlConnector;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,14 +12,19 @@ namespace TheGameLibrary_RDR_2353FA21
 {
     class ProgOps
     {
-        //connection string to TheGameLibrary database
+
+
+
+
         private const string CONNECT_STRING =
-        @"Server=cstnt.tstc.edu;" +
-         "Database=TheGameLibrary_RDR_2353FA21;" +
-         "User Id=rrichardsonfa212353;" +
-         "password=1600361";
+        @"Server=localhost;" +
+         "Port = 3306;" +
+         "User Id=root;" +
+         "password=asdfasdf";//Put Real Password Here
+
+
         //Current orderID for this current customer
-        private static int _currentCustomerOrderID;
+        private static Int32 _currentCustomerOrderID;
 
         public static int CurrentCustomerOrderID
         {
@@ -43,11 +49,11 @@ namespace TheGameLibrary_RDR_2353FA21
         //Used to reestablish connection once database has been closed the first time
         private static bool _databaseOpened = false;
         ////build a connection to TheGameLibrary database
-        private static SqlConnection _cntTheGameLibraryDatabase = new SqlConnection(CONNECT_STRING);
+        private static MySqlConnection _cntTheGameLibraryDatabase = new MySqlConnection(CONNECT_STRING);
         //add the command object
-        private static SqlCommand _sqlTheGameLibraryCommand;
+        private static MySqlCommand _sqlTheGameLibraryCommand;
         //add the data adapter
-        private static SqlDataAdapter _daTheGameLibrary = new SqlDataAdapter();
+        private static MySqlDataAdapter _daTheGameLibrary = new MySqlDataAdapter();
         //add the data table
         private static DataTable _dtTheGameLibraryTable = new DataTable();
         private static StringBuilder errorMessages = new StringBuilder();
@@ -71,9 +77,9 @@ namespace TheGameLibrary_RDR_2353FA21
                 {
                     //This is run if not first opening of fromShopNow
                     //All required items are recreated so connection can be established
-                    _cntTheGameLibraryDatabase = new SqlConnection(CONNECT_STRING);
+                    _cntTheGameLibraryDatabase = new MySqlConnection(CONNECT_STRING);
                         //add the data adapter
-                        _daTheGameLibrary = new SqlDataAdapter();
+                        _daTheGameLibrary = new MySqlDataAdapter();
                         //add the data table
                         _dtTheGameLibraryTable = new DataTable();
                         //open the connection to TheGameLibrary database
@@ -81,8 +87,8 @@ namespace TheGameLibrary_RDR_2353FA21
                         _databaseOpened = true;
                 }
                 //message stating that connection to database was succesful
-                MessageBox.Show("Connection to database was successfully opened.", "Database Connection",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Connection to database was successfully opened.", "Database Connection",
+                //    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (SqlException ex)
             {
@@ -113,8 +119,8 @@ namespace TheGameLibrary_RDR_2353FA21
                 //close connection
                 _cntTheGameLibraryDatabase.Close();
                 //message stating that connection to database was succesful
-                MessageBox.Show("Connection to database was successfully closed.", "Database Connection",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Connection to database was successfully closed.", "Database Connection",
+                //    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //dispose of the sql objects
                 _cntTheGameLibraryDatabase.Dispose();
                 _sqlTheGameLibraryCommand.Dispose();
@@ -145,10 +151,10 @@ namespace TheGameLibrary_RDR_2353FA21
         public static string getDescription(string upcVar)
         {
             string sqlStatement = "Select Video_Description" +
-                        " From Video_Games " +
+                        " From the_game_library.Video_Games " +
                         "WHERE Video_Game_UPC = '"+ upcVar + "'";
             //reset command object
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
             string descriptionVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
             return descriptionVar;
         }
@@ -156,10 +162,10 @@ namespace TheGameLibrary_RDR_2353FA21
         public static string calculateSubtotal()
         {
             string sqlStatement = "Select SUM(Total_Line_Cost) " +
-                        " From Orders " +
+                        " From the_game_library.Orders " +
                         "WHERE OrderID = " + _currentCustomerOrderID;
             //reset command object
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
             string SubtotalVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
             return SubtotalVar.ToString();
         }
@@ -239,17 +245,17 @@ namespace TheGameLibrary_RDR_2353FA21
             do
             {
                 string sqlStatement = "SELECT TOP(1) Video_Game_UPC " +
-                "FROM Orders " +
+                "FROM the_game_library.Orders " +
                 "WHERE OrderID = " + _currentCustomerOrderID;
-                _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+                _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
                 string Video_Game_UPCVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
                 int Order_QuantityVar = getCurrentShoppingCartQuantity(Video_Game_UPCVar);
                 int currentTableQuantity = getQuantity(Video_Game_UPCVar);
                 updateVideoGamesTable(-Order_QuantityVar, Video_Game_UPCVar, currentTableQuantity);
-                sqlStatement = "DELETE FROM Orders " +
+                sqlStatement = "DELETE FROM the_game_library.Orders " +
                 "WHERE Video_Game_UPC = '" + Video_Game_UPCVar + "' AND " +
                 "OrderID = " + _currentCustomerOrderID;
-                _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+                _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
                 Int32 recordsAffected =
                     _sqlTheGameLibraryCommand.ExecuteNonQuery();
             } while (getShoppingCartSize() != 0);
@@ -258,18 +264,18 @@ namespace TheGameLibrary_RDR_2353FA21
         public static void removeFromCart(string titleVar)
         {
             string sqlStatement = "SELECT Orders.Video_Game_UPC " +
-            "FROM Orders " +
-            "INNER JOIN Video_Games ON Orders.Video_Game_UPC = Video_Games.Video_Game_UPC " +
-            "WHERE Video_Games.Video_Title = '" + titleVar + "' AND Orders.OrderID = " + _currentCustomerOrderID;
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+            "FROM the_game_library.Orders " +
+            "INNER JOIN the_game_library.Video_Games ON the_game_library.Orders.Video_Game_UPC = Video_Games.Video_Game_UPC " +
+            "WHERE the_game_library.Video_Games.Video_Title = '" + titleVar + "' AND the_game_library.Orders.OrderID = " + _currentCustomerOrderID;
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
             string Video_Game_UPCVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
             int Order_QuantityVar = getCurrentShoppingCartQuantity(Video_Game_UPCVar);
             int currentTableQuantity = getQuantity(Video_Game_UPCVar);
             updateVideoGamesTable(-Order_QuantityVar, Video_Game_UPCVar, currentTableQuantity);
-            sqlStatement = "DELETE FROM Orders " +
+            sqlStatement = "DELETE FROM the_game_library.Orders " +
             "WHERE Video_Game_UPC = '" + Video_Game_UPCVar + "' AND " +
             "OrderID = " + _currentCustomerOrderID;
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
             Int32 recordsAffected =
             _sqlTheGameLibraryCommand.ExecuteNonQuery();
         }
@@ -277,10 +283,10 @@ namespace TheGameLibrary_RDR_2353FA21
         public static int getShoppingCartSize()
         {
             string sqlStatement = "Select COUNT(OrderID)" +
-                        " From Orders " +
+                        " From the_game_library.Orders " +
                         "WHERE OrderID = " + _currentCustomerOrderID + "";
             //reset command object
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
             string shoppingCartSizeVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
             return int.Parse(shoppingCartSizeVar);
         }
@@ -288,10 +294,10 @@ namespace TheGameLibrary_RDR_2353FA21
         public static string getShoppingCartUPCCurrentOrder()
         {
             string sqlStatement = "Select Video_Game_UPC" +
-                        " From Orders " +
+                        " From the_game_library.Orders " +
                         "WHERE OrderID = " + _currentCustomerOrderID;
             //reset command object
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
             string ShoppingCartUPCCurrentOrderVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
             return ShoppingCartUPCCurrentOrderVar.ToString();
         }
@@ -299,10 +305,10 @@ namespace TheGameLibrary_RDR_2353FA21
         public static bool checkIfInCartAlready(string upcVar)
         {
             string sqlStatement = "Select Video_Game_UPC" +
-                        " From Orders " +
+                        " From the_game_library.Orders " +
                         "WHERE OrderID = " + _currentCustomerOrderID + " AND Video_Game_UPC = '" + upcVar + "'";
             //reset command object
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
             try 
             { 
                 string quantityVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
@@ -316,12 +322,20 @@ namespace TheGameLibrary_RDR_2353FA21
         /// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public static int getQuantity(string upcVar)
         {
+            CloseDisposeDatabaseTheGameLibrary();
+            OpenDatabaseTheGameLibrary();
+
             string sqlStatement = "Select Video_QuantityOnHand" +
-                        " From Video_Games " +
+                        " From the_game_library.Video_Games " +
                         "WHERE Video_Game_UPC = '" + upcVar + "'";
             //reset command object
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
-            string quantityVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
+            MySqlCommand _sqlTheGameLibraryCommandGetQuantityTempVar;
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+            _sqlTheGameLibraryCommandGetQuantityTempVar = _sqlTheGameLibraryCommand;
+            //string quantityVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
+
+
+            string quantityVar = _sqlTheGameLibraryCommandGetQuantityTempVar.ExecuteScalar().ToString();
             return int.Parse(quantityVar);
         }
         ////////////////////////////////////////////////////////
@@ -338,7 +352,7 @@ namespace TheGameLibrary_RDR_2353FA21
             {
                 //MessageBox.Show("Item is not in Orders table yet, create new order.");
                 //Create INSERT INTO sql statement
-                string sqlStatement = "INSERT INTO Orders " +
+                string sqlStatement = "INSERT INTO the_game_library.Orders " +
                      "(OrderID, Video_Game_UPC, CustomerID, " +
                      "Order_Quantity, Total_Line_Cost) Values(" +
                      _currentCustomerOrderID + ", '" +//OrderID
@@ -347,7 +361,7 @@ namespace TheGameLibrary_RDR_2353FA21
                      Order_QuantityVar + ", " +//Order_Quantity
                      Total_Line_CostVar + ")";//Total_Line_Cost
                 //reset command object
-                _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, 
+                _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, 
                     _cntTheGameLibraryDatabase);
                 //Execute INSERT INTO query
                 Int32 recordsAffected = 
@@ -359,11 +373,11 @@ namespace TheGameLibrary_RDR_2353FA21
                 //SELECT the next OrderID to use for this customers current order
                 int currentShoppingCartQuantity = getCurrentShoppingCartQuantity(Video_Game_UPCVar);
                 string sqlStatement =
-                    "UPDATE Orders " +
+                    "UPDATE the_game_library.Orders " +
                     "SET Order_Quantity = " + (currentShoppingCartQuantity + Order_QuantityVar) +
                     " WHERE Video_Game_UPC = '" + Video_Game_UPCVar + "'";
                 //reset command object
-                _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+                _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
                 //Execute INSERT INTO query
                 //_currentCustomerOrderID = int.Parse(_sqlTheGameLibraryCommand.ExecuteScalar().ToString()) + 1;
                 _sqlTheGameLibraryCommand.ExecuteNonQuery();
@@ -374,13 +388,32 @@ namespace TheGameLibrary_RDR_2353FA21
         public static void selectNewOrderID()
         {
             //SELECT the next OrderID to use for this customers current order
-            string sqlStatement = "SELECT MAX(CAST(OrderID as INT)) FROM Orders";
+            //string sqlStatement = "SELECT MAX(CAST(OrderID AS INT)) " +
+            //    "FROM the_game_library.Orders";
+            string sqlStatement = "SELECT MAX(OrderID) " +
+                "FROM the_game_library.Orders";
             //reset command object
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, 
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, 
                 _cntTheGameLibraryDatabase);
             //Execute INSERT INTO query
-            _currentCustomerOrderID = (int.Parse(
-                _sqlTheGameLibraryCommand.ExecuteScalar().ToString())+1);
+            //_currentCustomerOrderID = (int.Parse(
+            //    _sqlTheGameLibraryCommand.ExecuteScalar().ToString())+1);
+            MySqlDataReader rd = _sqlTheGameLibraryCommand.ExecuteReader();
+            if (rd.HasRows)
+            {
+                rd.Read(); // read first row
+                try
+                {
+                    var count = rd.GetInt32(0);
+                
+                _currentCustomerOrderID = count + 1;
+                }
+                catch {
+                    _currentCustomerOrderID = 1;
+                }
+            }
+            //_currentCustomerOrderID = (Int32)_sqlTheGameLibraryCommand.ExecuteScalar();
+
         }
         //////////////////////////////////////////////////////////////////////////
         public static int getNewOrderID()
@@ -392,11 +425,11 @@ namespace TheGameLibrary_RDR_2353FA21
         {
            
                 string sqlStatement = "Select Order_Quantity" +
-                                " From Orders " +
+                                " From the_game_library.Orders " +
                                 "WHERE Video_Game_UPC = '" + upcVar + "' " +
                                 "AND OrderID = " + getNewOrderID();
                 //reset command object
-                _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+                _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
                 string quantityVar = _sqlTheGameLibraryCommand.ExecuteScalar().ToString();
                 return int.Parse(quantityVar);
         }
@@ -405,11 +438,11 @@ namespace TheGameLibrary_RDR_2353FA21
         {
             //SELECT the next OrderID to use for this customers current order
             string sqlStatement =
-                "UPDATE Video_Games " +
+                "UPDATE the_game_library.Video_Games " +
                 "SET Video_QuantityOnHand = " + (currentTableQuantity - Order_QuantityVar) +
                 " WHERE Video_Game_UPC = '" + Video_Game_UPCVar + "'";
             //reset command object
-            _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+            _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
             //Execute INSERT INTO query
             _sqlTheGameLibraryCommand.ExecuteNonQuery();
         }
@@ -421,15 +454,20 @@ namespace TheGameLibrary_RDR_2353FA21
                 dgvGamesList.Refresh();
 
                     //statement for the command string
-                    string sqlStatement = "Select Video_Title AS \"Title\", " +
-                    "FORMAT(Video_PricePerUnit,'N2') AS \"Price\", Video_Genre AS \"Genre\", ESRB_Rating AS \"Rating\"," +
-                    " SystemType AS \"System\", Video_Game_UPC AS \"UPC\"" + 
-                    " From Video_Games ORDER BY Video_Title";
+                    string sqlStatement = 
+                    "Select Video_Title AS \"Title\", " +
+                    "FORMAT(Video_PricePerUnit,'N2') AS \"Price\", " +
+                    "Video_Genre AS \"Genre\", " +
+                    "ESRB_Rating AS \"Rating\", " +
+                    "SystemType AS \"System\", " +
+                    "Video_Game_UPC AS \"UPC\" " + 
+                    "From the_game_library.video_games " +
+                    "ORDER BY Video_Title";
                     //reset command object
-                    _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+                    _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
                 //Reset Data Adapter
                 _daTheGameLibrary.Dispose();
-                _daTheGameLibrary = new SqlDataAdapter();
+                _daTheGameLibrary = new MySqlDataAdapter();
                 //establish data adapter
                 _daTheGameLibrary.SelectCommand = _sqlTheGameLibraryCommand;
                 //Reset Data Table
@@ -469,15 +507,19 @@ namespace TheGameLibrary_RDR_2353FA21
                 dgvShoppingCart.Refresh();
                 //statement for the command string
                 string sqlStatement =
-                "SELECT Video_Games.Video_Title AS 'Title', FORMAT(Video_Games.Video_PricePerUnit,'N2') AS 'Price', Orders.Order_Quantity AS 'Quantity', FORMAT(Orders.Total_Line_Cost,'N2') AS 'Total' " +
-                "FROM Orders " +
-                "INNER JOIN Video_Games ON Orders.Video_Game_UPC = Video_Games.Video_Game_UPC " +
+                "SELECT Video_Games.Video_Title AS 'Title', " +
+                "FORMAT(Video_Games.Video_PricePerUnit,'N2') AS 'Price', " +
+                "Orders.Order_Quantity AS 'Quantity', " +
+                "FORMAT(Orders.Total_Line_Cost,'N2') AS 'Total' " +
+                "FROM the_game_library.Orders " +
+                "INNER JOIN the_game_library.Video_Games ON " +
+                "Orders.Video_Game_UPC = Video_Games.Video_Game_UPC " +
                 "WHERE Orders.OrderID = " + _currentCustomerOrderID;
                 //reset command object
-                _sqlTheGameLibraryCommand = new SqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
+                _sqlTheGameLibraryCommand = new MySqlCommand(sqlStatement, _cntTheGameLibraryDatabase);
                 //Reset Data Adapter
                 _daTheGameLibrary.Dispose();
-                _daTheGameLibrary = new SqlDataAdapter();
+                _daTheGameLibrary = new MySqlDataAdapter();
                 //establish data adapter
                 _daTheGameLibrary.SelectCommand = _sqlTheGameLibraryCommand;
                 //Reset Data Table
@@ -544,7 +586,7 @@ namespace TheGameLibrary_RDR_2353FA21
             try
             {
                 //save the updated employees table
-                SqlCommandBuilder employeesAdapterCommands = new SqlCommandBuilder(_daTheGameLibrary);
+                MySqlCommandBuilder employeesAdapterCommands = new MySqlCommandBuilder(_daTheGameLibrary);
                 _daTheGameLibrary.Update(_dtTheGameLibraryTable);
             }
             catch (SqlException ex)
